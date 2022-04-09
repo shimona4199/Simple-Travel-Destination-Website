@@ -1,0 +1,129 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('image/background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+header .search-bar-container{
+   top:100%; left: 0; right: 0;
+}
+.logo{
+    color: #fabd02;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo{
+    color: #fabd02;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+span{
+    color: white;
+}
+.btn{
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color:  #fabd02;
+    padding:15px 40px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+.nav{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    trasform: translate(-50%,-50%)
+    text-align: center;
+}
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.destination-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.destination {
+    background: #03a9f4;
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.4);
+    color: rgb(223, 182, 47);
+   margin: 0.5em;
+    min-height: 200px;
+    flex: 0 1 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.destination:hover h2 {
+    transform: rotate(0deg);
+}
+
+h2 {
+    margin: 0;
+    transform: rotate(-45deg);
+    transition: transform 0.5s;
+    text-shadow: 0 0 5px #01579b;
+}
+
+#california {
+    background-color: #03a9f4;
+}
+
+#florence {
+    background-color: #d32f2f;
+}

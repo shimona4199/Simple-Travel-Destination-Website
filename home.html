@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Travels</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<style>
+    body{
+        background:url('image/home-3.jpg') no-repeat ;
+    }
+    
+</style>
+<body>
+    <div class="icon">
+        <i class="fas fa-search" id="search-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+    
+    <div class="container">
+        <input type="button" class="btn btn-lg btn-success" onclick="goToHome()" value="Home" /> <br>
+     </br>
+    
+     </div>
+
+     <p> The Destination selected is:
+		<span class="output"></span>
+	</p>
+
+    <button onclick="getOption()">Destination</button>
+	<script type="text/javascript">
+
+	function getOption() {
+		selectElement = document.querySelector('#Destination');
+		output = selectElement.options[selectElement.selectedIndex].value;
+		document.querySelector('.output').textContent = output;
+	}
+	</script>
+
+    <select id="Destination">
+        <option value="paris">paris</option>
+        <option value="london">london</option>
+        <option value="italy">italy</option>
+        <option value="melbourne">melbourne</option>
+        <option value="newyork">newyork</option>
+        <option value="denmark">denmark</option>
+        <option value="norway">norway</option>
+    </select>
+    
+
+
+	
+</body> <br>
+</br>
+<body>
+     
+  <div class="container">
+    
+ <button class="button" href="#" onclick="show('popup')">About us</button>
+ <div class="popup" id="popup">
+    <p>this is a travel website</p>
+    
+ </div>
+
+ </div>
+ 
+<div class="container">
+    <input type="text" class="btn btn-lg btn-success" onclick="goToHome()" value="contact" /> <br>
+ </br>
+ <input type="text" class="btn btn-lg btn-success" onclick="goToHome()" value="shim.caroline4199@gmail.com" />
+
+ </div>
+ <script src="js/script.js"></script>
+</body>
+</html>
